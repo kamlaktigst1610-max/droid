@@ -163,7 +163,7 @@ pub fn scan_system_images(root: &Path) -> Vec<SystemImage> {
                     id: format!("system-images;{api_name};{variant};{abi}"),
                     api,
                     android: android_name(api),
-                    variant,
+                    variant: variant.clone(),
                     abi,
                     path: s(&abi_dir),
                     recommended,
